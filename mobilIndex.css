@@ -7,7 +7,7 @@
     margin-right: 0;
     padding-left: 16px; /* Небольшие аккуратные отступы по бокам */
     padding-right: 16px;
-    background: linear-gradient(#E1FF8F 18.5%, #202027 18.5%);
+    background: #E1FF8F;
   }
   /* 2. Сбрасываем формулу центрирования десктопа */
   .centr {
@@ -97,21 +97,7 @@
     width: 39px;
     height: 41px;
   }
-  .game-block-container {
-    width: 343px;
-    height: 49px;
-    margin-bottom: 298px;
-  }
-  .game-block-title {
-    padding-bottom: 0px;
-    margin-bottom: 24px;
-  }
-  .for {
-    grid-template-columns: repeat(3, 1fr);
-    justify-items: center;
-    gap: 24px;
-  }
-  .for__item {
-    width: 343px;
+  .game-block {
+    display: none;
   }
 }/*# sourceMappingURL=mobilIndex.css.map */

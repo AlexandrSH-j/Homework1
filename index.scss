@@ -19,8 +19,7 @@ button {
 .body {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
-    background: linear-gradient(#E1FF8F 36.5%, #202027 36.5%);
-    margin-left: 120px;
+    background: linear-gradient(#E1FF8F 13.5%, #202027 13.5%);
     margin-right: 120px;
 }
 
@@ -137,6 +136,7 @@ button {
 .game-block {
     /* margin-top: 94px; */
     color: #FFFFFF;
+    margin-bottom: 96px;
 }
 
 .game-block-container {
@@ -229,5 +229,132 @@ button {
     letter-spacing: 0px;
     vertical-align: middle;
 }
+
+.mini-game-block {
+    color: #FFFFFF;
+    margin-bottom: 144px;
+}
+
+.mini-game-block-container {
+    width: 1201px;
+    // height: 198px;
+    gap: 24px;
+    // margin-bottom: 72px;
+    padding-bottom: 72px;
+}
+
+.mini-game-block-title {
+    width: 1200px;
+    height: 78px;
+    font-size: 64px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    padding-bottom: 24px;
+}
+
+.for-mini-game {
+    // display: grid;
+    // gap: 32px;
+    // grid-template-columns: repeat(9, 1fr);
+    width: 1200px;
+    height: 500px;
+    border-radius: 30px;
+    margin-bottom: 32px;
+}
+
+.for-mini-game__item {
+    width: 1200px;
+    min-height: 500px;
+    border-radius: 30px;
+    box-shadow: 0px 12.61px 42.25px -7.57px rgba(0, 0, 0, 0.1294117647);
+    background: #FFFFFF;
+    color: #202027;
+    grid-column: span 3;
+    overflow-wrap: break-word;
+    display: flex;
+    flex-direction: row;
+    overflow: hidden;
+    text-decoration: none;
+    transition: all 1s;
+    justify-content: space-between;
+}
+
+.for-mini-game__item_recers {
+    flex-direction: row-reverse;
+}
+
+.for-mini-game__item-content {
+    width: 600px;
+    height: 500px;
+    gap: 10px;
+    padding: 48px;
+}
+
+.for-mini-game__item-title-cart {
+    width: 504px;
+    font-size: 48px;
+    line-height: 100%;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin-bottom: 24px;
+}
+
+.for-mini-game__item-paragraf {
+    width: 505px;
+    font-size: 24px;
+    line-height: 32px;
+    letter-spacing: 0px;
+    vertical-align: middle;
+    margin-bottom: 36px;
+}
+
+.for-mini-game__item-button {
+    width: 247px;
+    height: 66px;
+    gap: 10px;
+    border-radius: 60px;
+    padding-top: 16px;
+    padding-right: 28px;
+    padding-bottom: 16px;
+    padding-left: 28px;
+    font-weight: 600px;
+    font-size: 24px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
+    color: #FFFFFF;
+    background-color: #202027;
+    transition: all 1s;
+}
+
+.for-mini-game__item-button:hover {
+    background: #FFFFFF;
+    color: #202027;
+}
+
+.for-mini-game__item-img {
+    width: 600px;
+    height: 500px;
+    border-radius: 30px;
+}
+
+.footer {
+    width: 100%;
+    height: 150px;
+    top: 5770px;
+    text-align: center;
+    background: #BDED35;
+}
+
+.footer-paragraf {
+    justify-content: center; 
+    align-items: center;    
+    width: 285px;
+    height: 29px;
+    top: 583px;
+    left: 578px;
+    display: flex;
+}
+
 
 @import 'mobilIndex';
