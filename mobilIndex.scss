@@ -136,4 +136,128 @@
 //     .for__item {
 //         width: 343px;
 //     }
+    .mini-game-block-container {
+        width: 343px;
+        height: 49px;
+        gap: 24px;
+        padding-bottom: 48px;
+    }
+
+    .mini-game-block-title {
+        width: 343px;
+        font-weight: 700px;
+        font-style: Bold;
+        font-size: 40px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        vertical-align: middle;
+
+    }
+
+    .for-mini {
+        display: grid;
+        flex-grow: 1;
+        padding: 24px;
+        align-items: center;
+        justify-content: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+    
+    .for-mini-game {
+        width: 343px;
+        height: 528px;
+        border-radius: 30px;
+    }
+
+    .for-mini-game:nth-child(2),
+    .for-mini-game:nth-child(3),
+    .for-mini-game:nth-child(5) {
+        height: 567px;
+    }
+
+    .for-mini-game:nth-child(4) {
+        height: 606px;
+    }
+
+    .for-mini-game:nth-child(6) {
+        height: 626px;
+    }
+
+    .for-mini-game__item {
+        width: 343px;
+        height: auto;
+        opacity: 1;
+        border-radius: 30px;
+        flex-direction: column-reverse;
+    }
+
+    .for-mini-game__item-content {
+        width: 343px;
+        height: auto;
+        gap: 9.07px;
+        border-radius: 27.22px;
+        padding-top: 29.04px;
+        padding-right: 29.04px;
+        padding-bottom: 32.67px;
+        padding-left: 29.04px;
+    }
+
+    .for-mini-game__item-img {
+        width: 343px;
+        height: 284.9259338378906px;
+        border-radius: 30px;
+
+    }
+
+    .for-mini-game__item-content {
+        width: 343px;
+        height: 243.70370483398438px;
+        gap: 9.07px;
+        border-radius: 27.22px;
+        padding-top: 29.04px;
+        padding-right: 29.04px;
+        padding-bottom: 32.67px;
+        padding-left: 29.04px;
+
+    }
+
+    .for-mini-game__item-title-cart {
+        font-weight: 700px;
+        font-style: Bold;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        margin-bottom: 16px;
+        width: auto;
+    }
+    
+    .for-mini-game__item-paragraf {
+        width: auto;
+        font-weight: 400px;
+        font-style: Regular;
+        font-size: 16px;
+        line-height: 100%;
+        letter-spacing: 0px;
+        vertical-align: middle;
+        margin-bottom: 32px;
+
+    }
+
+    .for-mini-game__item-button {
+        width: 285px;
+        height: 55px;
+        gap: 10px;
+        border-radius: 60px;
+        padding-top: 16px;
+        padding-right: 28px;
+        padding-bottom: 16px;
+        padding-left: 28px;
+        border-width: 1px;
+        font-weight: 600px;
+        font-size: 16px;
+        line-height: 142%;
+        letter-spacing: 0%;
+        text-align: center;
+    }
 }
