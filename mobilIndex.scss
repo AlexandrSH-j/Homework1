@@ -6,8 +6,7 @@
         margin-right: 0;
         padding-left: 16px;
         padding-right: 16px;
-        background: linear-gradient(#E1FF8F 17%, #202027 17%);
-        
+        background: linear-gradient(#E1FF8F 15%, #202027 15%)
     }
 
     .centr {
@@ -19,7 +18,7 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        min-height: 100vh; 
+        height: 700px; 
         overflow: none; 
     }
 
@@ -51,6 +50,14 @@
         width: 339px;
         height: auto;
         padding-bottom: 36px;
+    }
+
+    .hero-page__img_zvezda-4 {
+        top: 232px;
+    }
+
+    .hero-page__img_zvezda-5 {
+        top: 276px;
     }
 
     .hero-page-buton {
