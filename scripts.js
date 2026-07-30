@@ -1,3 +1,5 @@
+// задание 5
+
 function getMin(a, b) {
   return Math.min(a, b);
 }
