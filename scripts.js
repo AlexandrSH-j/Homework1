@@ -28,6 +28,149 @@ for (let i = 0; i < quiz.length; i++) {
 alert("Игра окончена! Количество правильных ответов: " + score + " из " + quiz.length);
 }
 
+function gameGGN () {
+  const secret = Math.floor(Math.random() * 100) + 1;
+  let guess;
+  while (guess !== secret) {
+      guess = +prompt("Угадай число от 1 до 100:");
+      if (guess < secret) alert("Больше!");
+      if (guess > secret) alert("Меньше!");
+  }
+  alert("Вы угадали!");
+}
+
+
+
+function gameGSA () {
+  const operations = ['+', '-', '*', '/'];
+  const op = operations[Math.floor(Math.random() * operations.length)];
+  const num1 = Math.floor(Math.random() * 10) + 1;
+  const num2 = Math.floor(Math.random() * 10) + 1;
+  const task = `${num1} ${op} ${num2}`;
+  const correctAnswer = eval(task);
+  const userAnswer = parseFloat(prompt(`Решите задачу: ${task}`));
+  if (userAnswer === correctAnswer) {
+      alert("Верно!");
+  } else {
+      alert(`Не верно !`);
+  }
+}
+
+
+
+function gameGRТ() {
+    const text = prompt("Введите текст, который нужно перевернуть:");
+    if (text === null) {
+        return;
+    }
+    
+    if (text.trim() === "") {
+        alert("Вы ничего не ввели! Попробуйте еще раз.");
+        return;
+    }
+    const reversedtext = text.split('').reverse().join('');
+    alert("Перевернутый текст:\n" + reversedtext);
+}
+
+
+
+
+
+
+
+
+
+const str = 'js';
+const resultjs = str.toUpperCase();
+console.log(resultjs); // 'JS'
+
+
+
+function filterByStart(arr, prefix) {
+  const lowerPrefix = prefix.toLowerCase();
+  return arr.filter(item => item.toLowerCase().startsWith(lowerPrefix));
+}
+const words = ['Яблоко', 'банан', 'Ягода', 'апельсин', 'якорь'];
+const searchStr = 'Яб';
+const resultfilt = filterByStart(words, searchStr);
+console.log(resultfilt)
+
+
+
+let num = 32.58884;
+let result = Math.floor(num);
+console.log(result);
+
+
+
+const min = Math.min(52, 53, 49, 77, 21, 32);
+const max = Math.max(52, 53, 49, 77, 21, 32);
+console.log("Минимальное значение:", min);
+console.log("Максимальное значение:", max);
+
+
+
+function printRandomNumber() {
+  const randomNumber = Math.floor(Math.random() * 10) + 1;
+  console.log(randomNumber);
+}
+printRandomNumber();
+
+
+
+function getRandomArray(maxNumber) {
+  const length = Math.floor(maxNumber / 2);
+  const result = [];
+  for (let i = 0; i < length; i++) {
+    result.push(Math.random() * maxNumber);
+  }
+  return result;
+}
+
+// Пример использования:
+console.log(getRandomArray(10)); // Длина массива будет 5, числа от 0 до 10
+
+
+
+function getRandomInRange(min, max) {
+  const lower = Math.ceil(Math.min(min, max));
+  const upper = Math.floor(Math.max(min, max));
+  return Math.floor(Math.random() * (upper - lower + 1)) + lower;
+}
+
+
+
+console.log(new Date()); // текущая дата
+
+
+
+const currentDate = new Date();
+const futureDate = new Date(currentDate.getTime() + 73 * 24 * 60 * 60 * 1000);
+console.log("Текущая дата:", currentDate.toLocaleDateString());
+console.log("Дата через 73 дня:", futureDate.toLocaleDateString());
+
+
+
+function formatDateAndTime(dateInput) {
+  const date = new Date(dateInput);
+  const months = [
+    'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+    'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
+  ];
+  const days = [
+    'воскресенье', 'понедельник', 'вторник', 
+    'среда', 'четверг', 'пятница', 'суббота'
+  ];
+  const dayNum = date.getDate();
+  const monthName = months[date.getMonth()];
+  const year = date.getFullYear();
+  const weekDay = days[date.getDay()];
+  const hours = String(date.getHours()).padStart(2, '0');
+  const minutes = String(date.getMinutes()).padStart(2, '0');
+  const seconds = String(date.getSeconds()).padStart(2, '0');
+  return `Дата: ${dayNum} ${monthName} ${year} — это ${weekDay}.\nВремя: ${hours}:${minutes}:${seconds}`;
+}
+
 
 
 
