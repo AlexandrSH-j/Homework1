@@ -25,18 +25,18 @@
                 <div class="hero-page-container">
                     <h1 class="hero-page-title">Добро пожаловать<br>на мой сайт мини-игр</h1>
                     <p class="hero-page-paragraf">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <strong>«Поехали!»</strong> и <strong>приступай.</strong></p>
-                    <button class="hero-page-buton" href="#">Поехали!</button>
+                    <a href="#games-section" class="hero-page-buton">Поехали!</a>
                 </div>
             </div>
         </section>
 
-        <section class="game-block centr">
+        <section id="games-section" class="game-block centr">
             <div class="game-block-container">
                 <h2 class="game-block-title">Об играх</h2>
                 <p class="game-block-paragraf">В моей коллекции представлено 6 игр на разные темы.<br>Игры несложные — в них может поиграть каждый.<br>Все игры доступны для пользования.</p>
             </div>
             <div class="for">
-                <a href="#" onclick="gameGTN()" class="for__item">
+                <a href="#" class="for__item">
                     <img class="for__item-img" src="img/Obloshka-kart__ug-chislo.jpg" alt="Угадай число" class="for__item-img">
                     <div class="for__item-content">
                         <p class="for__item-paragraf">Игра №1</p>
@@ -64,7 +64,7 @@
                         <h3 class="for__item-title-cart">Камень,<br>ножницы,<br>бумага</h3>
                     </div>
                 </a>
-                <a href="#" class="for__item">
+                <a onclick="gameGTN()" href="#" class="for__item">
                     <img class="for__item-img" src="img/Obloshka-kart__viktorina.jpg" alt="Угадай число" class="for__item-img">
                     <div class="for__item-content">
                         <p class="for__item-paragraf">Игра №5</p>
@@ -91,7 +91,7 @@
                         <div class="for-mini-game__item-content">
                             <h3 class="for-mini-game__item-title-cart">Угадай число</h3>
                             <p class="for-mini-game__item-paragraf">Попробуй угадать случайное число от 1 до 100.</p>
-                            <button onclick="gameGTN()" class="for-mini-game__item-button">Играть!</button>
+                            <button class="for-mini-game__item-button">Играть!</button>
                         </div>
                         <img class="for-mini-game__item-img" src="img/Obloshka-kart__ug-chislo.jpg" alt="Угадай число" class="for__item-img">
                     </a>
@@ -131,7 +131,7 @@
                         <div class="for-mini-game__item-content">
                             <h3 class="for-mini-game__item-title-cart">Простая<br>викторина</h3>
                             <p class="for-mini-game__item-paragraf">Отвечай на вопросы викторины с вариантами ответов.</p>
-                            <button class="for-mini-game__item-button">Играть!</button>
+                            <button onclick="gameGTN()" class="for-mini-game__item-button">Играть!</button>
                         </div>
                         <img class="for-mini-game__item-img" src="img/Obloshka-kart__viktorina.jpg" alt="Угадай число" class="for__item-img">
                     </a>

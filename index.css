@@ -43,7 +43,8 @@
     font-size: 16px;
     width: 339px;
     height: auto;
-    padding-bottom: 36px;
+    margin-bottom: 40px;
+    padding-bottom: unset;
   }
   .hero-page__img_zvezda-4 {
     top: 232px;
@@ -220,6 +221,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
   text-decoration: none;
 }
@@ -341,6 +346,7 @@ button {
 .hero-page-paragraf {
   width: 465px;
   height: 64px;
+  margin-bottom: 50px;
 }
 
 .hero-page-buton {
@@ -650,7 +656,8 @@ button {
     font-size: 16px;
     width: 339px;
     height: auto;
-    padding-bottom: 36px;
+    margin-bottom: 40px;
+    padding-bottom: unset;
   }
   .hero-page__img_zvezda-4 {
     top: 232px;

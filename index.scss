@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -127,6 +131,7 @@ button {
 .hero-page-paragraf {
     width: 465px;
     height: 64px;
+    margin-bottom: 50px;
 }
 
 .hero-page-buton {
