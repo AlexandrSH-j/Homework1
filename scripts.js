@@ -82,7 +82,7 @@ function gameGRТ() {
 
 const str = 'js';
 const resultjs = str.toUpperCase();
-console.log(resultjs); // 'JS'
+console.log(resultjs);
 
 
 
@@ -97,10 +97,10 @@ console.log(resultfilt)
 
 
 
-let num = 32.58884;
-let result = Math.floor(num);
-console.log(result);
-
+let num = 32.58884; // исправил //
+console.log(Math.floor(num));
+console.log(Math.ceil(num));
+console.log(Math.round(num));
 
 
 const min = Math.min(52, 53, 49, 77, 21, 32);
@@ -126,9 +126,7 @@ function getRandomArray(maxNumber) {
   }
   return result;
 }
-
-// Пример использования:
-console.log(getRandomArray(10)); // Длина массива будет 5, числа от 0 до 10
+console.log(getRandomArray(10));
 
 
 
@@ -140,14 +138,13 @@ function getRandomInRange(min, max) {
 
 
 
-console.log(new Date()); // текущая дата
+console.log(new Date());
 
 
 
-const currentDate = new Date();
-const futureDate = new Date(currentDate.getTime() + 73 * 24 * 60 * 60 * 1000);
-console.log("Текущая дата:", currentDate.toLocaleDateString());
-console.log("Дата через 73 дня:", futureDate.toLocaleDateString());
+const currentDate = new Date(); // исправил //
+currentDate.setDate(currentDate.getDate() + 73);
+console.log(currentDate);
 
 
 
