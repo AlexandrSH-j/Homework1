@@ -1,3 +1,5 @@
+// Основное задание по верстке макета:
+
 function gameGTN () {
   const quiz = [
     { 
@@ -74,99 +76,204 @@ function gameGRТ() {
 
 
 
-
-
-
-
-
-
-const str = 'js';
-const resultjs = str.toUpperCase();
-console.log(resultjs);
-
-
-
-function filterByStart(arr, prefix) {
-  const lowerPrefix = prefix.toLowerCase();
-  return arr.filter(item => item.toLowerCase().startsWith(lowerPrefix));
+function gameKNB() {
+  const userChoice = prompt("Введите: камень, ножницы или бумага:").toLowerCase();
+  const choices = ["камень", "ножницы", "бумага"];
+  const randomIndex = Math.floor(Math.random() * choices.length);
+  const computerChoice = choices[randomIndex];
+  let result = "";
+  if (userChoice === computerChoice) {
+      result = "Ничья!";
+  } else if (
+      (userChoice === "камень" && computerChoice === "ножницы") ||
+      (userChoice === "ножницы" && computerChoice === "бумага") ||
+      (userChoice === "бумага" && computerChoice === "камень")
+  ) {
+      result = "Вы победили!";
+  } else {
+      result = "Компьютер победил!";
+  }
+  alert(
+      "Ваш выбор: " + userChoice + "\n" +
+      "Выбор компьютера: " + computerChoice + "\n\n" +
+      result
+  );
 }
-const words = ['Яблоко', 'банан', 'Ягода', 'апельсин', 'якорь'];
-const searchStr = 'Яб';
-const resultfilt = filterByStart(words, searchStr);
-console.log(resultfilt)
 
 
 
-let num = 32.58884; // исправил //
-console.log(Math.floor(num));
-console.log(Math.ceil(num));
-console.log(Math.round(num));
-
-
-const min = Math.min(52, 53, 49, 77, 21, 32);
-const max = Math.max(52, 53, 49, 77, 21, 32);
-console.log("Минимальное значение:", min);
-console.log("Максимальное значение:", max);
 
 
 
-function printRandomNumber() {
-  const randomNumber = Math.floor(Math.random() * 10) + 1;
-  console.log(randomNumber);
+
+
+
+
+
+
+// Задания на работу с кодом:
+
+const people1 = [
+   { name: 'Глеб', age: 29 },
+   { name: 'Анна', age: 17 },
+   { name: 'Олег', age: 7 },
+   { name: 'Оксана', age: 47 }
+];
+console.log(people1.sort((a, b) => b.age - a.age));
+
+
+
+function isPositive(num) {
+  return num > 0;
 }
-printRandomNumber();
-
-
-
-function getRandomArray(maxNumber) {
-  const length = Math.floor(maxNumber / 2);
+function isMale(person) {
+  return person.gender === "mele";
+}
+function filter(array, ruleFunction) {
   const result = [];
-  for (let i = 0; i < length; i++) {
-    result.push(Math.random() * maxNumber);
+  for (let i = 0; i < array.length; i++) {
+    if (ruleFunction(array[i])) {
+      result.push(array[i]);
+    }
   }
   return result;
 }
-console.log(getRandomArray(10));
+console.log(filter([3, -4, 1, 9], isPositive));
+const people2 = [
+  {name: 'Глеб', gender: 'male'},
+  {name: 'Анна', gender: 'female'},
+  {name: 'Олег', gender: 'male'},
+  {name: 'Оксана', gender: 'female'}
+];
+console.log(filter(people2, isMale));
 
 
 
-function getRandomInRange(min, max) {
-  const lower = Math.ceil(Math.min(min, max));
-  const upper = Math.floor(Math.max(min, max));
-  return Math.floor(Math.random() * (upper - lower + 1)) + lower;
+const intervalId = setInterval(() => {
+    console.log(new Date());
+}, 3000);
+setTimeout(() => {
+    clearInterval(intervalId);
+    console.log('Время прошло');
+}, 30000);
+
+
+
+function delayForSecond(callback) {
+  setTimeout(callback, 1000);
 }
+delayForSecond(function () {
+   console.log('Привет, Глеб!');
+})
 
 
 
-console.log(new Date());
-
-
-
-const currentDate = new Date(); // исправил //
-currentDate.setDate(currentDate.getDate() + 73);
-console.log(currentDate);
-
-
-
-function formatDateAndTime(dateInput) {
-  const date = new Date(dateInput);
-  const months = [
-    'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
-    'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
-  ];
-  const days = [
-    'воскресенье', 'понедельник', 'вторник', 
-    'среда', 'четверг', 'пятница', 'суббота'
-  ];
-  const dayNum = date.getDate();
-  const monthName = months[date.getMonth()];
-  const year = date.getFullYear();
-  const weekDay = days[date.getDay()];
-  const hours = String(date.getHours()).padStart(2, '0');
-  const minutes = String(date.getMinutes()).padStart(2, '0');
-  const seconds = String(date.getSeconds()).padStart(2, '0');
-  return `Дата: ${dayNum} ${monthName} ${year} — это ${weekDay}.\nВремя: ${hours}:${minutes}:${seconds}`;
+function delayForSecond(cb) {
+    setTimeout(() => {
+        console.log('Прошла одна секунда');
+        if(cb) {  cb(); }
+    }, 1000)
 }
+function sayHi (name) {
+    console.log(`Привет, ${name}!`);
+}
+delayForSecond(() => sayHi('Глеб'));
+
+
+
+
+
+
+
+
+
+// const str = 'js';
+// const resultjs = str.toUpperCase();
+// console.log(resultjs);
+
+
+
+// function filterByStart(arr, prefix) {
+//   const lowerPrefix = prefix.toLowerCase();
+//   return arr.filter(item => item.toLowerCase().startsWith(lowerPrefix));
+// }
+// const words = ['Яблоко', 'банан', 'Ягода', 'апельсин', 'якорь'];
+// const searchStr = 'Яб';
+// const resultfilt = filterByStart(words, searchStr);
+// console.log(resultfilt)
+
+
+
+// let num = 32.58884;
+// console.log(Math.floor(num));
+// console.log(Math.ceil(num));
+// console.log(Math.round(num));
+
+
+// const min = Math.min(52, 53, 49, 77, 21, 32);
+// const max = Math.max(52, 53, 49, 77, 21, 32);
+// console.log("Минимальное значение:", min);
+// console.log("Максимальное значение:", max);
+
+
+
+// function printRandomNumber() {
+//   const randomNumber = Math.floor(Math.random() * 10) + 1;
+//   console.log(randomNumber);
+// }
+// printRandomNumber();
+
+
+
+// function getRandomArray(maxNumber) {
+//   const length = Math.floor(maxNumber / 2);
+//   const result = [];
+//   for (let i = 0; i < length; i++) {
+//     result.push(Math.random() * maxNumber);
+//   }
+//   return result;
+// }
+// console.log(getRandomArray(10));
+
+
+
+// function getRandomInRange(min, max) {
+//   const lower = Math.ceil(Math.min(min, max));
+//   const upper = Math.floor(Math.max(min, max));
+//   return Math.floor(Math.random() * (upper - lower + 1)) + lower;
+// }
+
+
+
+// console.log(new Date());
+
+
+
+// const currentDate = new Date();
+// currentDate.setDate(currentDate.getDate() + 73);
+// console.log(currentDate);
+
+
+
+// function formatDateAndTime(dateInput) {
+//   const date = new Date(dateInput);
+//   const months = [
+//     'января', 'февраля', 'марта', 'апреля', 'мая', 'июня',
+//     'июля', 'августа', 'сентября', 'октября', 'ноября', 'декабря'
+//   ];
+//   const days = [
+//     'воскресенье', 'понедельник', 'вторник', 
+//     'среда', 'четверг', 'пятница', 'суббота'
+//   ];
+//   const dayNum = date.getDate();
+//   const monthName = months[date.getMonth()];
+//   const year = date.getFullYear();
+//   const weekDay = days[date.getDay()];
+//   const hours = String(date.getHours()).padStart(2, '0');
+//   const minutes = String(date.getMinutes()).padStart(2, '0');
+//   const seconds = String(date.getSeconds()).padStart(2, '0');
+//   return `Дата: ${dayNum} ${monthName} ${year} — это ${weekDay}.\nВремя: ${hours}:${minutes}:${seconds}`;
+// }
 
 
 
