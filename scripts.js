@@ -119,7 +119,7 @@ const people1 = [
    { name: 'Олег', age: 7 },
    { name: 'Оксана', age: 47 }
 ];
-console.log(people1.sort((a, b) => b.age - a.age));
+console.log(people1.sort((a, b) => a.age - b.age));
 
 
 
@@ -127,7 +127,7 @@ function isPositive(num) {
   return num > 0;
 }
 function isMale(person) {
-  return person.gender === "mele";
+  return person.gender === "male";
 }
 function filter(array, ruleFunction) {
   const result = [];
