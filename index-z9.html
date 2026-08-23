@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>homework9</title>
+</head>
+<body>
+    <!-- 1-е задание -->
+    <h1 id="title">Нажми на "Скрыть" что-бы заголовок скрылся.</h1>
+    <button id="toggleButton">Скрыть</button>
+    <script>
+        const title = document.querySelector('#title');
+        const button1 = document.querySelector('#toggleButton');
+        button1.addEventListener('click', function() {
+            if (title.style.display === 'none') {
+                title.style.display = 'block';
+                button1.textContent = 'Скрыть';
+            } else {
+                title.style.display = 'none';
+                button1.textContent = 'Показать';
+            }
+        });
+    </script>
+    <!-- 2-е задание -->
+    <p id="text">Нажми на кнопку "Изменить цвет" и тогда цвет текста будет синий !</p>
+    <button id="colorButton">Изменить цвет</button>
+    <script>
+        const paragraph = document.querySelector('#text');
+        const button2 = document.querySelector('#colorButton');
+        button2.addEventListener('click', function() {
+            paragraph.style.color = 'blue';
+        });
+    </script>
+    <!-- 3-е задание -->
+    <h1 id="heading">Нажми на кнопку "Изменить текст" что-бы поменялся загаловок !</h1>
+    <button id="changeTextButton">Изменить текст</button>
+    <script>
+        const heading = document.querySelector('#heading');
+        const button3 = document.querySelector('#changeTextButton');
+        button3.addEventListener('click', function() {
+            heading.textContent = 'Привет, мир!';
+        });
+    </script>
+    <!-- 4-е задание -->
+    <p class="description">Первый абзац текста.</p>
+    <div class="description">Второй элемент с текстом.</div>
+    <span class="description">Третий элемент текста.</span>
+    <br><br>
+    <button id="changeClassButton">Изменить все элементы</button>
+    <script>
+        const button4 = document.querySelector('#changeClassButton');
+        const elements = document.querySelectorAll('.description');
+        button4.addEventListener('click', function() {
+            elements.forEach(function(element) {
+                element.textContent = 'Измененный текст';
+            });
+        });
+    </script>
+    <!-- 5-е задание -->
+    <p class="description2">Этот текст изменится.</p>
+    <p class="description2">И этот текст тоже изменится.</p>
+    <p>Этот абзац останется без изменений.</p>
+    <p>И этот скрипт не тронет.</p>
+    <br>
+    <button id="updateButton">Изменить текст</button>
+    <script>
+        const button5 = document.querySelector('#updateButton');
+        const descElements = document.querySelectorAll('.description2');
+        button5.addEventListener('click', function() {
+            descElements.forEach(function(element) {
+                element.textContent = 'Новый текст';
+            });
+        });
+    </script>
+    <br>
+    <!-- 6-е задание -->
+    <button id="addElementButton">Добавить элемент</button>
+    <script>
+        const button6 = document.querySelector('#addElementButton');
+        button6.addEventListener('click', function() {
+            const newParagraph = document.createElement('p');
+            newParagraph.textContent = 'Новый абзац';
+            document.body.appendChild(newParagraph);
+        });
+    </script>
+    <!-- 7-е задание -->
+    <p class="description3">Первый абзац.</p>
+    <p class="description3">Второй абзац.</p>
+    <p>Третий абзац.</p>
+    <br>
+    <button id="deleteElementButton">Удалить элемент</button>
+    <script>
+        const button7 = document.querySelector('#deleteElementButton');
+        button7.addEventListener('click', function() {
+        const elementToDelete = document.querySelector('.description3');
+        elementToDelete.remove();
+    });
+    </script>
+</body>
+</html>
