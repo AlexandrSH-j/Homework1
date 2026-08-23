@@ -6,6 +6,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 a {
     text-decoration: none;
 }
@@ -20,7 +24,6 @@ button {
     font-family: "Montserrat", sans-serif;
     font-size: 16px;
     background: linear-gradient(#E1FF8F 13.5%, #202027 13.5%);
-    margin-right: 120px;
 }
 
 .centr {
@@ -44,6 +47,26 @@ button {
     width: 769px;
     height: 358px;
     margin-bottom: 340px;
+}
+
+.hero-page-container {
+    width: 769px;
+    height: 244px;
+    gap: 24px;
+}
+
+.here-page-title {
+    font-weight: 700px;
+    font-size: 64px;
+    line-height: 100%;
+    width: 769px;
+    height: 156px;
+}
+
+.here-page-paragraf {
+    font-size: 24px;
+    width: 720px;
+    height: 64px;
 }
 
 .hero-page__img_zvezda-1 {
@@ -108,9 +131,15 @@ button {
 .hero-page-paragraf {
     width: 465px;
     height: 64px;
+    margin-bottom: 50px;
 }
 
 .hero-page-buton {
+    font-weight: 600px;
+    font-size: 24px;
+    line-height: 142%;
+    letter-spacing: 0%;
+    text-align: center;
     margin-top: 48px;
     margin-bottom: 156px;
     width: 247px;
@@ -125,7 +154,6 @@ button {
     background-color: #202027;
     color: #FFFFFF;
     transition: all 1s;
-    cursor: pointer;
 }
 
 .hero-page-buton:hover {
@@ -149,11 +177,11 @@ button {
 .game-block-title {
     width: 314px;
     height: 78px;
-    // font-style: Bold;
     font-size: 64px;
     letter-spacing: 0px;
     vertical-align: middle;
-    padding-bottom: 24px;
+    margin-bottom: 24px;
+
 }
 
 .game-block-paragraf {
@@ -171,7 +199,7 @@ button {
 
 .for__item {
     width: 378px;
-    min-height: 473px;
+    height: 473px;
     border-radius: 30px;
     box-shadow: 0px 12.61px 42.25px -7.57px #00000021;
     background: #FFFFFF;
@@ -183,6 +211,22 @@ button {
     overflow: hidden;
     text-decoration: none;
     transition: all 1s;
+}
+
+.for__item:nth-child(1),
+.for__item:nth-child(3) {
+    height: 473px;
+}
+
+.for__item:nth-child(2),
+.for__item:nth-child(5) {
+    height: 512px;
+}
+
+.for__item:nth-child(4),
+.for__item:nth-child(6) {
+    height: 551px;
+    margin-top: -39px;
 }
 
 .for__item:hover {
@@ -291,9 +335,9 @@ button {
 }
 
 .for-mini-game__item-title-cart {
+    line-height: 59px;
     width: 504px;
     font-size: 48px;
-    line-height: 100%;
     letter-spacing: 0px;
     vertical-align: middle;
     margin-bottom: 24px;
@@ -344,16 +388,18 @@ button {
     top: 5770px;
     text-align: center;
     background: #BDED35;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 
-.footer-paragraf {
-    justify-content: center; 
-    align-items: center;    
-    width: 285px;
+.footer-paragraf {    
+    width: 300px;
     height: 29px;
     top: 583px;
     left: 578px;
-    display: flex;
+    font-family: Montserrat;
+    font-size: 24px;
 }
 
 
