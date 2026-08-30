@@ -46,10 +46,10 @@
     margin-bottom: 40px;
     padding-bottom: unset;
   }
-  .hero-page__img_zvezda-4 {
+  .hero-page__star--position-4 {
     top: 232px;
   }
-  .hero-page__img_zvezda-5 {
+  .hero-page__star--position-5 {
     top: 276px;
   }
   .hero-page-buton {
@@ -61,25 +61,37 @@
     padding-right: 103.5px;
     padding-left: 103.5px;
   }
+  .marquee-container {
+    overflow: hidden;
+    background-color: #BCEC30;
+    padding: 15px 0;
+    display: flex;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
   .hero-page__img {
     position: absolute;
   }
-  .hero-page__img_zvezda-1 {
+  .hero-page__star--position-1 {
     top: -246px;
     left: -150px;
     width: 35px;
     height: 35px;
   }
-  .hero-page__img_zvezda-2 {
+  .hero-page__star--position-2 {
     top: -283px;
     left: -98px;
     width: 21px;
     height: 21px;
   }
-  .hero-page__img_zvezda-3 {
+  .hero-page__star--position-3 {
     display: none;
   }
-  .hero-page__img_zvezda-mobil {
+  .hero-page__star--position-mobil {
     display: block;
     position: absolute;
     width: 223.5223828788px;
@@ -88,13 +100,13 @@
     right: -193.84px;
     z-index: -1;
   }
-  .hero-page__img_zvezda-4 {
+  .hero-page__star--position-4 {
     top: 193px;
     left: 98px;
     width: 18px;
     height: 18px;
   }
-  .hero-page__img_zvezda-5 {
+  .hero-page__star--position-5 {
     top: 214px;
     left: 115px;
     width: 39px;
@@ -238,7 +250,6 @@ button {
 .body {
   font-family: "Montserrat", sans-serif;
   font-size: 16px;
-  background: linear-gradient(#E1FF8F 13.5%, #202027 13.5%);
 }
 
 .centr {
@@ -248,20 +259,17 @@ button {
 
 .hero-page {
   position: relative;
+  background: #E1FF8F;
 }
 
 .hero-page__content {
   display: flex;
-  flex-direction: row-reverse;
-  justify-content: flex-end;
   align-items: center;
   top: 196px;
   left: 120px;
-  gap: 48px;
-  margin-top: 169px;
   width: 769px;
-  height: 358px;
-  margin-bottom: 340px;
+  padding-top: 196px;
+  padding-bottom: 156px;
 }
 
 .hero-page-container {
@@ -284,50 +292,51 @@ button {
   height: 64px;
 }
 
-.hero-page__img_zvezda-1 {
+.hero-page__star--position-1 {
   position: absolute;
   width: 57px;
   height: 57px;
-  top: -36%;
-  left: 10%;
+  top: 14%;
+  left: 15%;
+  z-index: 1;
 }
 
-.hero-page__img_zvezda-2 {
+.hero-page__star--position-2 {
   position: absolute;
   width: 35px;
   height: 35px;
-  top: -43%;
-  left: 14%;
+  top: 8%;
+  left: 19%;
+  z-index: 1;
 }
 
-.hero-page__img_zvezda-3 {
+.hero-page__star--position-3 {
   position: absolute;
-  width: 40vw;
+  width: 32vw;
   height: auto;
-  top: -55%;
-  right: -8.5%;
-  z-index: -1;
+  top: 0%;
+  right: -12px;
+  z-index: 0;
 }
 
-.hero-page__img_zvezda-mobil {
+.hero-page__star--position-mobil {
   display: none;
 }
 
-.hero-page__img_zvezda-4 {
+.hero-page__star--position-4 {
   position: absolute;
   width: 37px;
   height: 37px;
-  top: 110%;
-  left: 55%;
+  top: 79%;
+  left: 75%;
 }
 
-.hero-page__img_zvezda-5 {
+.hero-page__star--position-5 {
   position: absolute;
   width: 83px;
   height: 83px;
-  top: 568px;
-  top: 120%;
-  left: 60%;
+  top: 75%;
+  left: 80%;
 }
 
 .hero-page-container {
@@ -376,10 +385,51 @@ button {
   color: #202027;
 }
 
+.marquee-container {
+  overflow: hidden;
+  background-color: #BCEC30;
+  padding: 15px 0;
+  display: flex;
+  width: 100vw;
+  position: relative;
+  left: 50%;
+  right: 50%;
+  margin-left: -50vw;
+  margin-right: -50vw;
+  top: 63px;
+}
+
+.marquee-content {
+  display: flex;
+  white-space: nowrap;
+  gap: 20px;
+  animation: scroll-left 25s linear infinite;
+}
+
+.marquee-content span {
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 700;
+  font-style: Bold;
+  font-size: 30px;
+  line-height: 110%;
+  letter-spacing: 4%;
+}
+
+@keyframes scroll-left {
+  0% {
+    transform: translateX(0%);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
 .game-block {
   /* margin-top: 94px; */
   color: #FFFFFF;
-  margin-bottom: 96px;
+  background: #202027;
+  padding-bottom: 96px;
+  margin-bottom: unset;
 }
 
 .game-block-container {
@@ -396,6 +446,7 @@ button {
   letter-spacing: 0px;
   vertical-align: middle;
   margin-bottom: 24px;
+  margin-top: 94px;
 }
 
 .game-block-paragraf {
@@ -489,9 +540,17 @@ button {
   vertical-align: middle;
 }
 
-.mini-game-block {
+.games-section {
+  background: linear-gradient(#202027);
   color: #FFFFFF;
-  margin-bottom: 144px;
+  border-bottom-width: 144px;
+  padding-bottom: 144px;
+}
+
+.mini-game-block {
+  padding-bottom: 96px;
+  margin-bottom: unset;
+  background: #202027;
 }
 
 .mini-game-block-container {
@@ -501,6 +560,7 @@ button {
 }
 
 .mini-game-block-title {
+  color: white;
   width: 1200px;
   height: 78px;
   font-size: 64px;
@@ -659,10 +719,10 @@ button {
     margin-bottom: 40px;
     padding-bottom: unset;
   }
-  .hero-page__img_zvezda-4 {
+  .hero-page__star--position-4 {
     top: 232px;
   }
-  .hero-page__img_zvezda-5 {
+  .hero-page__star--position-5 {
     top: 276px;
   }
   .hero-page-buton {
@@ -674,25 +734,37 @@ button {
     padding-right: 103.5px;
     padding-left: 103.5px;
   }
+  .marquee-container {
+    overflow: hidden;
+    background-color: #BCEC30;
+    padding: 15px 0;
+    display: flex;
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+  }
   .hero-page__img {
     position: absolute;
   }
-  .hero-page__img_zvezda-1 {
+  .hero-page__star--position-1 {
     top: -246px;
     left: -150px;
     width: 35px;
     height: 35px;
   }
-  .hero-page__img_zvezda-2 {
+  .hero-page__star--position-2 {
     top: -283px;
     left: -98px;
     width: 21px;
     height: 21px;
   }
-  .hero-page__img_zvezda-3 {
+  .hero-page__star--position-3 {
     display: none;
   }
-  .hero-page__img_zvezda-mobil {
+  .hero-page__star--position-mobil {
     display: block;
     position: absolute;
     width: 223.5223828788px;
@@ -701,13 +773,13 @@ button {
     right: -193.84px;
     z-index: -1;
   }
-  .hero-page__img_zvezda-4 {
+  .hero-page__star--position-4 {
     top: 193px;
     left: 98px;
     width: 18px;
     height: 18px;
   }
-  .hero-page__img_zvezda-5 {
+  .hero-page__star--position-5 {
     top: 214px;
     left: 115px;
     width: 39px;
@@ -826,5 +898,27 @@ button {
     line-height: 142%;
     letter-spacing: 0%;
     text-align: center;
+  }
+}
+@media (max-width: 956px) {
+  .for {
+    display: grid;
+    gap: 64px;
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .for__item {
+    grid-column: span 1;
+  }
+  .game-block-container {
+    width: 956px;
+  }
+  .mini-game-block-container {
+    max-width: 956px;
+  }
+  .for-mini-game {
+    max-width: 956px;
+  }
+  .for-mini-game__item {
+    max-width: 956px;
   }
 }/*# sourceMappingURL=index.css.map */
