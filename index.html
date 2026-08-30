@@ -11,7 +11,6 @@
     </head>
 
     <body class="body">
-        <script src="scripts.js"></script>
         <section class="hero-page centr">
             <div class="hero-page__img">
                 <img class="hero-page__star hero-page__star--position-1" src="img/Star 1.png" alt="Малая звезда-1">
@@ -26,6 +25,23 @@
                     <h1 class="hero-page-title">Добро пожаловать<br>на мой сайт мини-игр</h1>
                     <p class="hero-page-paragraf">Тебе предстоит пройти несколько увлекательных игр. Если готов, нажимай <strong>«Поехали!»</strong> и <strong>приступай.</strong></p>
                     <a href="#games-section" class="hero-page-buton">Поехали!</a>
+                </div>
+            </div>
+            <div class="marquee-container">
+                <div class="marquee-content">
+                    <!-- Первый набор элементов -->
+                    <span>ВИКТОРИНА</span><span>✦</span>
+                    <span>УГАДАЙ ЧИСЛО</span><span>✦</span>
+                    <span>ПЕРЕВЕРНИ ТЕКСТ</span><span>✦</span>
+                    <span>ПРОСТАЯ АРИФМЕТИКА</span><span>✦</span>
+                    <span>КАМЕНЬ, НОЖНИЦЫ, БУМАГА</span><span>✦</span>
+                    <span>ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</span><span>✦</span>
+                    <span>ВИКТОРИНА</span><span>✦</span>
+                    <span>УГАДАЙ ЧИСЛО</span><span>✦</span>
+                    <span>ПЕРЕВЕРНИ ТЕКСТ</span><span>✦</span>
+                    <span>ПРОСТАЯ АРИФМЕТИКА</span><span>✦</span>
+                    <span>КАМЕНЬ, НОЖНИЦЫ, БУМАГА</span><span>✦</span>
+                    <span>ГЕНЕРАТОР СЛУЧАЙНЫХ ЦВЕТОВ</span><span>✦</span>
                 </div>
             </div>
         </section>
@@ -141,7 +157,7 @@
                         <div class="for-mini-game__item-content">
                             <h3 class="for-mini-game__item-title-cart">Генератор<br>случайных<br>цветов</h3>
                             <p class="for-mini-game__item-paragraf">Игра, в которой при клике на кнопку<br>фон страницы меняется на случайный.</p>
-                            <button class="for-mini-game__item-button">Играть!</button>
+                            <button onclick="gameGRC()" id="colorBtn" class="for-mini-game__item-button">Играть!</button>
                         </div>
                         <img class="for-mini-game__item-img" src="img/Obloshka-kart__colors.jpg" alt="Генератор случайных цветов" class="for__item-img">
                     </a>
@@ -151,5 +167,6 @@
          <footer class="footer centr">
             <p class="footer-paragraf"><strong>Все права защищены.</strong></p>
          </footer>
+    <script src="scripts.js"></script>
     </body>
 </html>

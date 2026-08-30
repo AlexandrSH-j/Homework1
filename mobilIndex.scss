@@ -19,7 +19,8 @@
         justify-content: center;
         align-items: center;
         height: 700px; 
-        overflow: none; 
+        overflow: none;
+        
     }
 
     .hero-page__content {
@@ -53,11 +54,11 @@
         padding-bottom: unset;
     }
 
-    .hero-page__img_zvezda-4 {
+    .hero-page__star--position-4 {
         top: 232px;
     }
 
-    .hero-page__img_zvezda-5 {
+    .hero-page__star--position-5 {
         top: 276px;
     }
 
@@ -70,31 +71,44 @@
         padding-right: 103.5px;
         padding-left: 103.5px;
     }
+    
+    .marquee-container {
+        overflow: hidden;
+        background-color: #BCEC30;
+        padding: 15px 0;
+        display: flex;
+        width: 100vw; 
+        position: relative;
+        left: 50%;
+        right: 50%;
+        margin-left: -50vw;
+        margin-right: -50vw;
+      }
 
 
     .hero-page__img {
         position: absolute;
     }
 
-    .hero-page__img_zvezda-1 {
+    .hero-page__star--position-1 {
         top: -246px;
         left: -150px;
         width: 35px;
         height: 35px;
     }
 
-    .hero-page__img_zvezda-2 {
+    .hero-page__star--position-2 {
         top: -283px;
         left: -98px;
         width: 21px;
         height: 21px;
     }
 
-    .hero-page__img_zvezda-3 {
+    .hero-page__star--position-3 {
         display: none;
     }
     
-    .hero-page__img_zvezda-mobil {
+    .hero-page__star--position-mobil {
         display: block;
         position: absolute;
         width: 223.52238287882213px;
@@ -104,14 +118,14 @@
         z-index: -1;
     }
 
-    .hero-page__img_zvezda-4 {
+    .hero-page__star--position-4 {
         top: 193px;
         left: 98px;
         width: 18px;
         height: 18px;
     }
 
-    .hero-page__img_zvezda-5 {
+    .hero-page__star--position-5 {
         top: 214px;
         left: 115px;
         width: 39px;

@@ -1,0 +1,27 @@
+@media (max-width: 956px) {
+    .for {
+        display: grid;
+        gap: 64px;
+        grid-template-columns: repeat(2, 1fr);
+    }
+    
+    .for__item {
+        grid-column: span 1;
+    }
+    
+    .game-block-container {
+        width: 956px;
+    }
+
+    .mini-game-block-container {
+        max-width: 956px;
+    }
+    
+    .for-mini-game {
+        max-width: 956px;
+    }
+
+    .for-mini-game__item {
+        max-width: 956px;
+    }
+}
