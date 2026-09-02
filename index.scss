@@ -35,8 +35,9 @@ body {
 .hero-page {
   position: relative;
   background: #E1FF8F;
-  padding: 196px 0 156px;
+  // padding: 196px 0 156px;
   overflow: hidden;
+  // padding-left: 120px;
 //   min-height: 100vh;
 }
 
@@ -46,8 +47,10 @@ body {
   align-items: flex-start;
   // max-width: 769px;
   position: relative;
-  padding-left: 10%;
+  // padding-left: 10%;
   z-index: 2;
+  padding-top: 196px;
+  padding-bottom: 156px;
 }
 
 .hero-page-title {
