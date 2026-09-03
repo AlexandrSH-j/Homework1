@@ -51,8 +51,8 @@
     grid-template-columns: repeat(2, 1fr);
   }
   .for__item {
-    height: auto !important;
-    margin-top: 0 !important;
+    height: auto;
+    margin-top: 0;
   }
   .for__item-title-cart {
     font-size: 26px;

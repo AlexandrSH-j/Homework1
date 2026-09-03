@@ -10,17 +10,13 @@
   }
 
   .hero-page {
-    // padding: 60px 0 80px;
-    // min-height: 100vh;
     display: flex;
     align-items: center;
-    // padding-left: 17px;
   }
 
   .hero-page__content {
     align-items: center;
     text-align: center;
-    // width: 90%;
   }
 
   .hero-page-title {
@@ -43,7 +39,6 @@
   }
 
   .hero-page__star--position-1 {
-    // width: 35px;
     height: 35px;
     top: 15%;
     left: 10%;
@@ -51,7 +46,6 @@
 
   .hero-page__star--position-2 {
     width: 21px;
-    // height: 21px;
     top: 10%;
     left: 20%;
   }
@@ -62,8 +56,6 @@
 
   .hero-page__star--position-mobil {
     display: block;
-    // width: 200px;
-    // height: auto;
     top: 0%;
     right: 0;
     z-index: 0;
@@ -71,17 +63,13 @@
 
   .hero-page__star--position-4 {
     width: 18px;
-    // height: 18px;
     top: 85%;
-    // bottom: 20%;
     left: 75%;
   }
 
   .hero-page__star--position-5 {
     width: 39px;
-    // height: 41px;
     top: 85%;
-    // bottom: 15%;
     left: 85%;
   }
 
